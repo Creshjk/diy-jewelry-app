@@ -1,0 +1,80 @@
+{
+  "pages": [
+    {
+      "path": "pages/auth/index",
+      "style": {
+        "navigationBarTitleText": "登录注册"
+      }
+    },
+    {
+      "path": "pages/design/index",
+      "style": {
+        "navigationBarTitleText": "AI设计"
+      }
+    },
+    {
+      "path": "pages/box/index",
+      "style": {
+        "navigationBarTitleText": "首饰盒"
+      }
+    },
+    {
+      "path": "pages/discovery/index",
+      "style": {
+        "navigationBarTitleText": "发现"
+      }
+    },
+    {
+      "path": "pages/content/index",
+      "style": {
+        "navigationBarTitleText": "教程材料"
+      }
+    },
+    {
+      "path": "pages/profile/index",
+      "style": {
+        "navigationBarTitleText": "我的"
+      }
+    },
+    {
+      "path": "pages/history/detail",
+      "style": {
+        "navigationBarTitleText": "设计详情"
+      }
+    }
+  ],
+  "tabBar": {
+    "color": "#7a6759",
+    "selectedColor": "#b67038",
+    "backgroundColor": "#fffaf4",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/design/index",
+        "text": "AI设计"
+      },
+      {
+        "pagePath": "pages/box/index",
+        "text": "首饰盒"
+      },
+      {
+        "pagePath": "pages/discovery/index",
+        "text": "发现"
+      },
+      {
+        "pagePath": "pages/content/index",
+        "text": "教程材料"
+      },
+      {
+        "pagePath": "pages/profile/index",
+        "text": "我的"
+      }
+    ]
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "DIY饰界",
+    "navigationBarBackgroundColor": "#fffaf4",
+    "backgroundColor": "#f6efe8"
+  }
+}

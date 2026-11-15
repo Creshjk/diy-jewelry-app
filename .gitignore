@@ -1,0 +1,32 @@
+# 依赖
+node_modules/
+unpackage/
+
+# 构建产物
+target/
+dist/
+*.class
+
+# 本地私密配置
+application-local.yml
+.env
+*.local.yml
+
+# IDE
+.idea/
+.vscode/
+*.iml
+.hbuilderx/
+
+# 日志与临时文件
+*.log
+logs/
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 压缩包
+*.zip
+*.rar
+*.7z

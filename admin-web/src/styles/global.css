@@ -1,0 +1,102 @@
+:root {
+  color-scheme: light;
+  --bg-main: linear-gradient(135deg, #f7efe4 0%, #f2f5fb 48%, #ebddd2 100%);
+  --bg-panel: rgba(255, 255, 255, 0.8);
+  --shadow-soft: 0 18px 50px rgba(92, 78, 61, 0.12);
+  --text-main: #2c241d;
+  --text-sub: #786a5d;
+  --accent: #b67038;
+  --accent-deep: #8c4c1f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+  color: var(--text-main);
+  background: var(--bg-main);
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+}
+
+.page-card {
+  background: var(--bg-panel);
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(18px);
+  border-radius: 24px;
+  box-shadow: var(--shadow-soft);
+  padding: 22px;
+}
+
+.list-page {
+  min-height: calc(100vh - 210px);
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.page-title {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.page-desc {
+  margin-top: 6px;
+  color: var(--text-sub);
+}
+
+.table-pagination {
+  margin-top: auto;
+  padding-top: 22px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.table-pagination .el-pagination__sizes {
+  margin-right: 18px;
+}
+
+.list-table {
+  flex: 1;
+}
+
+.list-table .el-table__inner-wrapper::before {
+  display: none;
+}
+
+.list-table .el-table__header th {
+  padding: 16px 0;
+  background: rgba(245, 236, 226, 0.9);
+  color: #5f4632;
+  font-size: 15px;
+}
+
+.list-table .el-table__body td {
+  padding: 18px 0;
+}
+
+.list-table .cell {
+  line-height: 1.7;
+}
+
+.table-thumb {
+  width: 72px;
+  height: 72px;
+  border-radius: 16px;
+  display: block;
+  overflow: hidden;
+  box-shadow: 0 10px 24px rgba(78, 57, 38, 0.12);
+}

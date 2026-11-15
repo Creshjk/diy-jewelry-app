@@ -1,0 +1,43 @@
+server:
+  port: 8080
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+spring:
+  application:
+    name: diy-jewelry-backend
+  datasource:
+    url: jdbc:mysql://localhost:3306/diy_jewelry?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: ${DB_PASSWORD:123456}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jackson:
+    date-format: yyyy-MM-dd HH:mm
+    time-zone: Asia/Shanghai
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: auto
+
+app:
+  cors:
+    origins:
+      - http://localhost:5173
+      - http://127.0.0.1:5173
+      - http://localhost:8081
+      - http://127.0.0.1:8081
+  ai:
+    endpoint: https://ark.cn-beijing.volces.com/api/v3/responses
+    image-endpoint: https://ark.cn-beijing.volces.com/api/v3/images/generations
+    api-key: ${ARK_API_KEY:}
+    image-api-key: ${ARK_IMAGE_API_KEY:}
+    model: doubao-seed-2-0-mini-260215
+    image-model: doubao-seedream-5-0-260128
+    fallback-image-base: https://picsum.photos/seed
